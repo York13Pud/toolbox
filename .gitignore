@@ -130,7 +130,6 @@ dmypy.json
 
 # Ignore Mac system files
 .DS_store
-.DS_Store
 
 # Ignore .vscode folder
 .vscode
