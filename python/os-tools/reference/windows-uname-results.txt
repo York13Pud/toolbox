@@ -1,0 +1,2 @@
+platform.uname()
+uname_result(system='Windows', node='DESKTOP-83C68JP', release='10', version='10.0.22621', machine='ARM64')

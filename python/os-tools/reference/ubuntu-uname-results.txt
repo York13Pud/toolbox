@@ -1,0 +1,2 @@
+platform.uname()
+uname_result(system='Linux', node='pi-4-server', release='5.15.0-1037-raspi', version='#40-Ubuntu SMP PREEMPT Fri Aug 25 16:42:00 UTC 2023', machine='aarch64')
