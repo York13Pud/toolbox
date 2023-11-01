@@ -1,3 +1,6 @@
+# -- Install snmp and snmpd:
+sudo apt install snmp snmpd
+
 # -- Stop the snmpd service:
 sudo systemctl stop snmpd
 
