@@ -6,7 +6,7 @@ sudo systemctl stop snmpd
 
 # -- Create a read only snmp user.
 # -- Change shapassword, aespassword and username to something else:
-sudo net-snmp-create-v3-user -ro -a SHA -A shapassword -x AES -X aespassword username
+sudo net-snmp-create-v3-user -ro -a SHA-512 -A shapassword -x AES -X aespassword username
 
 # -- Edit /etc/snmp/snmpd.conf:
 sudo nano /etc/snmp/snmpd.conf
@@ -23,6 +23,13 @@ rocommunity6 public default -V systemonly
 
 # rocommunity  public default -V systemonly
 # rocommunity6 public default -V systemonly
+
+# -- Add the user below the following line with the same settings but change authPrivUser to whatever the username is you use:
+rouser authPrivUser authpriv -V systemonly
+
+# -- For example, a username of fred:
+rouser authPrivUser authpriv -V systemonly
+rouser fred authpriv -V systemonly
 
 # -- Save the config file:
 ctrl-x then y and enter
