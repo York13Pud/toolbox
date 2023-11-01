@@ -24,12 +24,18 @@ rocommunity6 public default -V systemonly
 # rocommunity  public default -V systemonly
 # rocommunity6 public default -V systemonly
 
+# ========================================================================================================
+# -- OPTIONAL - It will restrict the OID's the user can see. Best not to do it.
 # -- Add the user below the following line with the same settings but change authPrivUser to whatever the username is you use:
 rouser authPrivUser authpriv -V systemonly
 
 # -- For example, a username of fred:
 rouser authPrivUser authpriv -V systemonly
-rouser fred authpriv -V systemonly
+rouser fred authpriv
+
+# -- Not specifying -V systemonly will grant access to the entire SNMP tree.
+
+# ========================================================================================================
 
 # -- Save the config file:
 ctrl-x then y and enter
