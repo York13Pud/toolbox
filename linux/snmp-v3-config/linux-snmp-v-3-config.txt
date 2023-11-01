@@ -28,7 +28,7 @@ rocommunity6 public default -V systemonly
 ctrl-x then y and enter
 
 # -- Start the snmpd service
-sudo systemctl stop snmpd
+sudo systemctl start snmpd
 
 # -- Restrict host that can access snmpv3 using a firewall rule.
 # -- Repeat for each ip address that will be connecting: 
